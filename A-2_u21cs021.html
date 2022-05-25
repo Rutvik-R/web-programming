@@ -4,7 +4,7 @@
 	<title>BANK ACCOUNT OPENING FORM</title>
 	<style type="text/css">
 		body{
-			margin: 30px;
+			margin:60px;
 		}
 		*{
 			margin: 3px;
@@ -15,6 +15,9 @@
 	.mydiv {
 		float: right;
 	}
+	.mydiv_2{
+		border: 2px solid black;
+	}
 	table, td ,tr{
 		border: 2px solid black;
 	}
@@ -22,30 +25,29 @@
 </head>
 <body><center>
 	<br><br>
-	<strong>SAVING BANK ACCOUNT OPENING FORM</strong><br>
-	(for BASIC\SMALL SB A/c)
-<br><hr>
-
+	<h2><strong>SAVING BANK ACCOUNT OPENING FORM</strong><br></h2><br>
+	<h3>(for BASIC\SMALL SB A/c)<h3>
+<br><br><br>
 </center>
 <form>	
 	<fieldset style="width:60%; float:left;">
 		<legend><strong>For Bank Use Only</strong></legend>
 	<label>	Name & Code of the branch</label>
 	<!-- <input type="text" name="n\c"> -->
-	<br><br>
+	<br>
 	<label>Cust ID. &nbsp;</label>
-	<input type="text" name="ID"><br><br>
+	<input type="text" name="ID"><br>
 	<label>A/C No. &nbsp;</label>
 	<input type="text" name="A/C No"><br>
 	</fieldset>
 	<div class="mydiv">
-		<br><br><br>
+		<br><br>
 		<label>Date &nbsp;</label>
 		<input type="Date" name="Date"><br>
 		<label>Time &nbsp;</label>
 		<input type="time" name="Time">
 	</div>
-<br><br><br>
+	<br><br><br>
 	<fieldset style="width: 100%;">
 		<legend><strong>Personal Details</strong></legend>
 
@@ -58,7 +60,7 @@
 			</tr>
 			<tr>
 				<td>2</td>
-				<td>Father / Husband ? Guardian Name</td>
+				<td>Father / Husband / Guardian Name</td>
 				<td colspan="3"><input type="text" name="FName"></td>
 
 			</tr>
@@ -88,7 +90,7 @@
 				<td>5</td>
 				<td>Marital Status</td>
 				<td colspan="2"><input type="radio" name="Marital">Married &nbsp;
-					<input type="radio" name="Marital">Unmarried &nbsp;
+					<input type="radio" name="Marital" checked >Unmarried &nbsp;
 					<input type="radio" name="Marital">Widowed &nbsp;
 				</td>
 				<td align="right">Signature</td>
@@ -96,10 +98,10 @@
 			</tr>
 		</table>
 	</fieldset>
-
-	<fieldset>
+<br>
+	<fieldset style="width:100%;">
 		<legend><strong>Contac Details</strong></legend>
-		<table>	
+		<table width="100%">	
 			<tr>
 				<td>Mobie No.<br>(1)</td>
 				<td><input type="numbers" name="MNo"></td>
@@ -119,11 +121,6 @@
 			<tr>
 				<td rowspan="2"> Current <br> Address</td>
 				<td rowspan="2"><textarea></textarea></td> 
-				<!-- <td>Village/<br>City</td>
-				<td><input type="text" name="V/c"></td>  -->
-
-			</tr>
-			<tr>
 				<td>	Village/<br>City</td>
 				<td><input type="text" name=""></td>
 				<td>District</td>
@@ -131,13 +128,98 @@
 			</tr>
 			<tr>
 				<td>State</td>
-				<td><input type="text" name=""></td>			
+				<td>
+					<input list="state">
+					<datalist id="state">
+						<option>Gujarat</option>
+						<option>Punjab</option>
+						<option>Rajasthan</option>
+						<option>Delhi</option>
+						<option>maharashtra</option>
+
+					</datalist>
+				</td>			
 				<td>Pincode</td>
 				<td><input type="text" name=""></td>			
 				
 			</tr>
 		</table>
+		<br>
+		<table width="100%">
+			<tr>
+				<td rowspan="2">Permanent<br>Address</td>
+				<td rowspan="2"><textarea></textarea>	</td>
+				<td>	Village/<br>City</td>
+				<td><input type="text" name=""></td>
+				<td>District</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>State</td>
+				<td>
+					<input list="state">
+					<datalist id="state">
+						<option>Gujarat</option>
+						<option>Punjab</option>
+						<option>Rajasthan</option>
+						<option>Delhi</option>
+						<option>maharashtra</option>
+
+					</datalist>
+				</td>			
+				<td>Pincode</td>
+				<td><input type="text" name=""></td>
+			</tr>
+		</table>
+	</fieldset><br>	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<fieldset style="width: 100%;">
+		<legend><strong>Documents</strong></legend>
+		<table width="100%">
+			<tr>
+				<td>
+					Aadhar <br> Card
+				</td>
+				<td><input type="text" name="No" value="Aadhar Number"></td>
+				<td><input type="file" name="card"></td>
+				<td>
+					PAN <br> Card
+				</td>
+				<td><input type="text" name="No" value="PAN Number"></td>
+				<td><input type="file" name="card"></td>
+				
+			</tr>
+			<tr>
+				
+				<td>
+					Electricity <br> Bill
+				</td>
+				<td colspan="2"><input type="file" name="card"></td>
+				<td>
+					GAS <br> Bill
+				</td>
+				<td colspan="2"><input type="file" name="card"></td>
+			
+			</tr>
+		</table>
 	</fieldset>
+<br><br><br><br><br><br><br><br><br>	
+	<hr style="width: 100%;  "><br>
+	<pre><h3>Please open a Savings Bank account in the name of Mr./Ms. ______________________________.
+	
+The Saving Bank rules and regulations including those relating to Small Account have been explained to me and I agree to abide by the same. An additional
+photograph is attached.</h3>
+	</pre>
+	<p style="float: left">
+		<label>Date</label>
+		<input type="date" name="date">
+	</p>
+	<center>
+		<label>Place</label>
+		<input type="text" name="place">	
+	
+	</centers>
+		<label style="float: right;">Signature</label>
+	</p>
 </form>
 
 </body>
