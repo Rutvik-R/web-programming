@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BANK ACCOUNT OPENING FORM</title>
+	<style type="text/css">
+		body{
+			margin: 30px;
+		}
+		*{
+			margin: 3px;
+		}
+		fieldset{
+			float: left;
+		}
+	.mydiv {
+		float: right;
+	}
+	table, td ,tr{
+		border: 2px solid black;
+	}
+</style>
+</head>
+<body><center>
+	<br><br>
+	<strong>SAVING BANK ACCOUNT OPENING FORM</strong><br>
+	(for BASIC\SMALL SB A/c)
+<br><hr>
+
+</center>
+<form>	
+	<fieldset style="width:60%; float:left;">
+		<legend><strong>For Bank Use Only</strong></legend>
+	<label>	Name & Code of the branch</label>
+	<!-- <input type="text" name="n\c"> -->
+	<br><br>
+	<label>Cust ID. &nbsp;</label>
+	<input type="text" name="ID"><br><br>
+	<label>A/C No. &nbsp;</label>
+	<input type="text" name="A/C No"><br>
+	</fieldset>
+	<div class="mydiv">
+		<br><br><br>
+		<label>Date &nbsp;</label>
+		<input type="Date" name="Date"><br>
+		<label>Time &nbsp;</label>
+		<input type="time" name="Time">
+	</div>
+<br><br><br>
+	<fieldset style="width: 100%;">
+		<legend><strong>Personal Details</strong></legend>
+
+		<table style="width:100%; border: 2px solid black;">
+			<tr>
+				<td>1</td>
+				<td>Name in Full (mr/Ms)</td>
+				<td colspan="3"><input type="text" name="Name"></td>
+				<td rowspan = 4> <center>Image</center></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Father / Husband ? Guardian Name</td>
+				<td colspan="3"><input type="text" name="FName"></td>
+
+			</tr>
+			<tr>	
+				<td>3</td>
+				<td>Gender</td>
+				<td><input type="radio" name="Gender" checked>Male &nbsp; <input type="radio" name="Gender">Female</td>
+				<td>Date of Birth</td>
+				<td><input type="date" name="Bdate"></td>
+			</tr>
+			<tr>	
+				<td>4</td>
+				<td>Occupation</td>
+				<td><input type="text" name="Occ"></td>
+				<td>Category</td>
+				<td><input list="Category" >
+						<datalist id="Category">
+							<option value="Gen">
+							<option value="EWS">
+							<option value="SC">
+							<option value="ST">
+						</datalist>
+
+				</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Marital Status</td>
+				<td colspan="2"><input type="radio" name="Marital">Married &nbsp;
+					<input type="radio" name="Marital">Unmarried &nbsp;
+					<input type="radio" name="Marital">Widowed &nbsp;
+				</td>
+				<td align="right">Signature</td>
+				<td></td>
+			</tr>
+		</table>
+	</fieldset>
+
+	<fieldset>
+		<legend><strong>Contac Details</strong></legend>
+		<table>	
+			<tr>
+				<td>Mobie No.<br>(1)</td>
+				<td><input type="numbers" name="MNo"></td>
+				<td>Mobie No.<br>(2)</td>
+				<td><input type="numbers" name="MNo"></td>
+				<td>Telephone/<br>Landline</td>
+				<td><input type="numbers" name="MNo"></td>
+				
+			</tr>
+			<tr>
+				<td>Personal <br> Email</td>
+				<td colspan="2"><input type="text" name="Email"></td> 
+				<td>Professinal Email</td>
+				<td colspan="2"><input type="text" name="Email"></td> 
+				
+			</tr>
+			<tr>
+				<td rowspan="2"> Current <br> Address</td>
+				<td rowspan="2"><textarea></textarea></td> 
+				<!-- <td>Village/<br>City</td>
+				<td><input type="text" name="V/c"></td>  -->
+
+			</tr>
+			<tr>
+				<td>	Village/<br>City</td>
+				<td><input type="text" name=""></td>
+				<td>District</td>
+				<td><input type="text" name=""></td>			
+			</tr>
+			<tr>
+				<td>State</td>
+				<td><input type="text" name=""></td>			
+				<td>Pincode</td>
+				<td><input type="text" name=""></td>			
+				
+			</tr>
+		</table>
+	</fieldset>
+</form>
+
+</body>
+</html>
