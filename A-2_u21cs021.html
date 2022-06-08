@@ -9,15 +9,6 @@
 		*{
 			margin: 3px;
 		}
-		fieldset{
-			float: left;
-		}
-	.mydiv {
-		float: right;
-	}
-	.mydiv_2{
-		border: 2px solid black;
-	}
 	table, td ,tr{
 		border: 2px solid black;
 	}
@@ -30,6 +21,7 @@
 <br><br><br>
 </center>
 <form>	
+	<table style="width:100%; border:0px solid black	;"><tr style="	border: none;"><td style="border: 	none;">
 	<fieldset style="width:60%; float:left;">
 		<legend><strong>For Bank Use Only</strong></legend>
 	<label>	Name & Code of the branch</label>
@@ -39,15 +31,17 @@
 	<input type="text" name="ID"><br>
 	<label>A/C No. &nbsp;</label>
 	<input type="text" name="A/C No"><br>
-	</fieldset>
+	</fieldset></td>
+	<td style="display: flex; justify-content: flex-end; border: 	none;">
 	<div class="mydiv">
 		<br><br>
 		<label>Date &nbsp;</label>
 		<input type="Date" name="Date"><br>
 		<label>Time &nbsp;</label>
 		<input type="time" name="Time">
-	</div>
-	<br><br><br>
+	</div></td></tr>
+</table>
+	<br>
 	<fieldset style="width: 100%;">
 		<legend><strong>Personal Details</strong></legend>
 
